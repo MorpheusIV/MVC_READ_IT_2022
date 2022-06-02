@@ -20,7 +20,11 @@
                             </span>
                         </div>
                     </div>
-                    <h3 class="heading mb-3"><a href="?postID=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h3>
+                    <h3 class="heading mb-3">
+                        <a href="?postID=<?php echo $post['id']; ?>">
+                            <?php echo $post['title']; ?>
+                        </a>
+                    </h3>
                     <p>
                         <?php echo $post['resume']; ?>
                     </p>

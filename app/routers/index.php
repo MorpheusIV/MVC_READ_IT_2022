@@ -7,7 +7,7 @@ if (isset($_GET['postID'])) :
     // CTRL: postsController
     // ACTION: showAction
     require_once '../app/controllers/postsController.php';
-    showAction($connexion, $_GET['postID']);
+    \App\Controllers\PostsController\showAction($connexion, $_GET['postID']);
 
 
 else :
@@ -16,6 +16,5 @@ else :
     // CTRL: postsController
     // ACTION: index
     require_once '../app/controllers/postsController.php';
-    indexAction($connexion);
+    \App\Controllers\PostsController\indexAction($connexion);
 endif;
-  
